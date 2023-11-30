@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePayment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <div class="hero">
+
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="review.html">Crew Ratings</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form action="service.php">
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address <br><br></h3>
+                <label for="fname"></i> Full Name</label>
+                <input type="text"  placeholder="Name Surname">
+                <label for="email"></i> Email</label>
+                <input type="text"  placeholder="example@mail_service.com">
+                <label for="adr"></i> Address</label>
+                <input type="text"  placeholder="73 Apple Road">
+                <label for="city"></i> City</label>
+                <input type="text"  placeholder="Bornmouth">
+                <label for="zip">Zip</label>
+                <input type="text" placeholder="XXXX" maxlength="4">
+                
+                <div class="row">
+                  <div class="col-50">
+                  </div>
+                  <div class="col-50">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-50">
+                <h3>Payment bill <br><br></h3>
+          
+            <label for="cname">Legal name on Card</label>
+            <input type="text"  name="cardname" placeholder="Name Surname">
+            <label for="ccnum">Credit card number</label>
+            <input type="text"  name="cardnumber" placeholder="1111-2222-3333-4444" maxlength="16">
+            <div class="row">
+              <div class="col-50">
+                <label for="expiry">Expiry</label>
+                <input type="text"  placeholder="MM/YY" maxlength="5">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text"  name="cvv" placeholder="CVV" maxlength="3">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Proceed to checkout" class="btn">
+        <input type="submit" class="btn" value="Not now"/>
+      </form>
+    </div>
+  </div>
+</form>
+
+</div>
+
+</body>
+</html>

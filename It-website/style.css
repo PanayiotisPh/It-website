@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {background-color: rgb(15, 15, 15);}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("images/icon_logo.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #3be407;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50%,-50%,);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*-----services-----*/
+
+.service{
+    width: 80%;
+    margin: auto;
+    text-align: 100px;
+    padding-top: 100px;
+}
+
+h1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-col{
+    flex-basis: 31%;
+    background: rgb(102, 236, 39);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+svg{
+    display: block;
+    margin: auto;
+}
+
+.service-col:hover{
+    box-shadow: 0 0 40px 0px #ffffff;
+}
+
+.crew{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.crew-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.crew-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(57, 214, 26, 0.75);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.crew-cv{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.crew-cv-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.crew-cv-col h3{
+    color: #fff;
+}
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/icon_logo.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.hero-text {
+    background-color: transparent; /* Green */
+    border:2px #fff;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.hero-text:hover {
+    background-color: #3be407; /* Green */
+    border:2px #fff;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+iframe {
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+}
+
+.popupSignIn button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #3be407;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.popupSignIn{
+    width: 400px;
+    background: rgb(71, 70, 70);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popupSignIn{
+    visibility: visible;
+    top: 70%;
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 99;
+}
+
+
+
+.popupSignUp{
+    width: 400px;
+    background: rgb(71, 70, 70);
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popupSignUp button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #3be407;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.open-popupSignUp{
+    visibility: visible;
+    top: 70%;
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 99;
+}
+
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(71, 70, 70);
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  #scrollBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #5c5858; /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 100%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */    
+  }
+  
+  #scrollBtn:hover {
+    box-shadow: 0 0 20px 0 #3be407;
+    
+  }
+
+  .footer{
+    color: rgb(255, 255,255,100);
+    background:#000;
+    border-top:1px solid #00ff26;
+    clear:both;
+    height:30px;
+    margin-top:10px;
+    padding:5px 0;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  footer:hover{
+    box-shadow: 0 0 50px 0 #3be407
+  }
+
+  .footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
