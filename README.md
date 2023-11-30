@@ -6,7 +6,7 @@
 ![Animation 1](./preview/Animation1.png)
 ![Animation 2](./preview/animation2.png)
 
-##Run it Locally
+## Run it Locally
 ```bash=
 Download XAMPP and change the default index.php file
 to the IT website index.php. To make it fully functonal
